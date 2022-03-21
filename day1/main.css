@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  transition: all .4s;
+}
+header {
+  width: 100%;
+  padding: 2rem 2.5rem;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 100px;
+  height: 25px;
+  background-color: #008b8b;
+  border-radius: 1rem;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.menu li {
+  width: 60px;
+  height: 10px;
+  margin: 0 0.5rem;
+  border-radius: 1rem;
+  background: #ccc;
+}
+.hero {
+  background: #008b8b31;
+  display: grid;
+  place-items: center;
+  margin: 4rem auto;
+  height: 8rem;
+  max-width: 800px;
+  font-size: 1rem;
+  width: 95%;
+  padding: 1rem;
+  color: #444
+  
+}
+
+.main {
+  max-width: 800px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.main p {
+  padding: 1rem 0;
+  color: #555;
+}
+.questions {
+  padding: 2rem;
+}
+
+.q {
+  width: 100%;
+  position: relative;
+  border: 1px solid #008b8b;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.14);
+  transition: all 0.4s;
+  margin: 1rem 0;
+  /* overflow: hidden; */
+}
+.q h4 {
+  padding: 1rem 2rem;
+  background: #008b8b;
+  cursor: pointer;
+  color: white;
+}
+.q input {
+  display: none;
+}
+.q p {
+  display: none;
+  transition: 0.4s;
+}
+.check:checked + p {
+  display: block;
+  padding: 1rem 2rem;
+}
+/* 
+ p::before{
+    position: absolute;
+    top : 1.125rem;
+    content: "+";
+    left: .5rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+} */
+
+
+@media screen and (max-width : 768px) {
+    .menu li{
+        display: none;
+    }
+}

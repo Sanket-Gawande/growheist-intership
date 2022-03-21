@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  transition: all 0.4s;
+}
+header {
+  width: 100%;
+  padding: 2rem 2.5rem;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 100px;
+  height: 25px;
+  background-color: #008b8b;
+  border-radius: 1rem;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.menu li {
+  width: 60px;
+  height: 10px;
+  margin: 0 0.5rem;
+  border-radius: 1rem;
+  background: #ccc;
+}
+
+.main {
+  width: 80%;
+  margin: 4rem auto;
+  max-width: 700px;
+  background-color: white;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  border-radius: 0.25rem;
+}
+.main h2 {
+  color: #008b8b;
+  font-size: 2rem;
+  padding: 0 2rem;
+}
+.main p {
+  padding: 0 2rem;
+  color: #555;
+}
+form {
+  margin: 2rem auto;
+  display: block;
+  width: 95%;
+  max-width: 500px;
+}
+form h4 {
+  color: #008b8b;
+  font-size: 0.9rem;
+}
+form input,
+textarea {
+  width: 100%;
+  padding: 0.45rem 1rem;
+  border: 1px solid #aaa;
+  margin: 0.25rem 0 1rem;
+  resize: vertical;
+  border-radius: 0.25rem;
+  outline: none;
+  font-size: 0.8rem;
+}
+
+form input:focus,
+textarea:focus {
+  border: 2px solid #008b8b;
+}
+.button {
+  background: #008b8b;
+  color: white;
+  border: none;
+  padding: 0.45rem 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .menu li {
+    display: none;
+  }
+}
+
+.response {
+  margin: 2rem auto;
+  width: 90%;
+  background-color: rgba(0, 220, 0, 0.155);
+  text-align: center;
+  color: green;
+  padding: 1rem;
+  
+}
+
