@@ -15,7 +15,7 @@
         <li></li>
         <li></li>
         <li></li>
-        <li></li>
+        <a href="/">Home</a>
         <a href="/contact.html">
           Contact us
         </a>
@@ -26,16 +26,22 @@
       <p>Feel free to share queries with us</p>
       <form id="form" method="post">
         <h4>Full name</h4>
-        <input type="text" name="name" class="name" />
+        <input required type="text" name="name" class="name" />
 
         <h4>Phone number</h4>
-        <input type="text" pattern="\d{10}" name="phone" class="phone" />
+        <input
+          required
+          type="text"
+          pattern="\d{10}"
+          name="phone"
+          class="phone"
+        />
 
         <h4>Email</h4>
-        <input type="email" name="email" class="email" />
+        <input required type="email" name="email" class="email" />
 
         <h4>Message</h4>
-        <textarea name="message" class="message" cols="10"></textarea>
+        <textarea required name="message" class="message" cols="10"></textarea>
 
         <button class="button">Send</button>
       </form>
@@ -44,6 +50,8 @@
       const form = document.getElementById('form')
       form.onsubmit = (e) => {
         e.preventDefault()
+        const button = document.querySelector('.button')
+        button.innerHTML = 'Sending...'
         const formdata = {
           name: document.querySelector('.name').value,
           email: document.querySelector('.email').value,
@@ -52,7 +60,7 @@
         }
 
         console.log({ formdata })
-        fetch('http://localhost:8180/', {
+        fetch('https://growheist-form.herokuapp.com/', {
           method: 'post',
           body: JSON.stringify(formdata),
           headers: {
@@ -62,9 +70,10 @@
           .then((data) => data.json())
           .then((json) => {
             if (json.status === 'sent') {
+              button.innerHTML = 'Sent !'
               form.innerHTML = `<h4 class="response">${json.message}</h4>`
-              form.innerHTML = `<h4 class="response">Something went wrong !!!</h4>`
             } else {
+              form.innerHTML = `<h4 class="response">Something went wrong !!!</h4>`
             }
           })
       }

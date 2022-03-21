@@ -37,6 +37,11 @@ header {
   border-radius: 1rem;
   background: #ccc;
 }
+.menu a{
+  text-decoration: none;
+  color: #008b8b;
+  margin: 0 .5rem;
+}
 
 .main {
   width: 80%;

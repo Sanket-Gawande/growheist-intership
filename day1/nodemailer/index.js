@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 const cors = require("cors");
 const PORT = process.env.PORT || 8180;
 require("dotenv").config()
-const HOSTNAME = process.env.HOSTNAME || "localhost";
+
 app.use(express.json());
 
 app.use(
@@ -51,7 +51,7 @@ app.post("/", (req, res) => {
   mail();
 });
 
-app.listen(PORT, HOSTNAME, (ERROR) => {
+app.listen(PORT,(ERROR) => {
   if (ERROR) console.log(error);
   console.log("server running");
 });
