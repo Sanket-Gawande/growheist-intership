@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+:root {
+  --main: #ff4f6c;
+}
 body {
   min-height: 100vh;
   background-color: #f9f9f9;
@@ -22,7 +25,7 @@ header {
 .logo {
   width: 100px;
   height: 25px;
-  background-color: #008b8b;
+  background-color: var(--main);
   border-radius: 1rem;
 }
 .menu {
@@ -38,7 +41,7 @@ header {
   background: #ccc;
 }
 .hero {
-  background: #008b8b31;
+  background: #eee;
   display: grid;
   place-items: center;
   margin: 4rem auto;
@@ -47,7 +50,8 @@ header {
   font-size: 1rem;
   width: 95%;
   padding: 1rem;
-  color: #444;
+  color:var(--main);
+  border-radius: .55rem;
 }
 
 .main {
@@ -67,7 +71,7 @@ header {
 .q {
   width: 100%;
   position: relative;
-  border: 1px solid #008b8b;
+  border: 1px solid var(--main);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.14);
   transition: all 0.4s;
   margin: 1rem 0;
@@ -75,16 +79,18 @@ header {
 }
 .q h4 {
   padding: 1rem 2rem;
-  background: #008b8b;
+  background: var(--main);
   cursor: pointer;
   color: white;
 }
+
 .q input {
   display: none;
 }
 .q p {
   display: none;
   transition: 0.4s;
+  background: #eee;
 }
 .check:checked + p {
   display: block;
@@ -109,6 +115,6 @@ header {
 }
 .menu a {
   text-decoration: none;
-  color: #008b8b;
+  color: var(--main);
   margin: 0 0.5rem;
 }
