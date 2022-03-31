@@ -41,7 +41,7 @@ header {
   background: #ccc;
 }
 .hero {
-  background: #eee;
+  background: #eee; 
   display: grid;
   place-items: center;
   margin: 4rem auto;
@@ -52,7 +52,18 @@ header {
   padding: 1rem;
   color:var(--main);
   border-radius: .55rem;
+  box-shadow: inset 0px 0px 25px 2px  #ff4f6c ;
 }
+ 
+.main {
+  max-width: 800px;
+  width: 95%;
+  margin: 0 auto;
+}
+/* 
+.main p {
+
+} */
 
 .main {
   max-width: 800px;
