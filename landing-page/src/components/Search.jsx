@@ -11,7 +11,7 @@ const Search = ({ setSearchBox, searchBox }) => {
     <div
       id="overlay"
       onClick={toggleOverlay}
-      className="fixed grid place-items-center top-0 left-0 h-screen w-screen backdrop-filter backdrop-blur-md"
+      className="fixed grid place-items-center  z-10 top-0 left-0 h-screen w-screen backdrop-filter backdrop-blur-md"
     >
       <div className="max-w-xl min-h-28 w-[90%] py-8  px-4 bg-white/80  mx-auto  shadow-md  shadow-slate-400 rounded-md">
         {/* search form */}

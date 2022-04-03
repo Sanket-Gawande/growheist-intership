@@ -2,7 +2,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
-      poppins: ['"IBM Plex Sans Arabic"', 'sans - serif'],
+      poppins: ['"Poppins"', 'sans-serif'],
     },
     extend: {},
   },
