@@ -25,7 +25,7 @@ function App() {
     <div className="min-h-screen bg-slate-100">
       {/* header */}
 
-      <div className=" flex  fixed top-0 w-full justify-between items-center md:px-16 px-4  py-1 shadow-md shadow-slate-200/50 bg-gradient-to-tr to-red-500/50 from-slate-800/10 backdrop-filter backdrop-blur-lg">
+      <div className=" flex z-20 fixed top-0 w-full justify-between items-center md:px-16 px-4  py-1 shadow-md shadow-slate-200/50 bg-gradient-to-tr to-red-500/50 from-slate-800/10 backdrop-filter backdrop-blur-lg">
         <img src="/logo-dark.png" alt="logo" className="h-16 w-16" />
 
         <ul
@@ -70,8 +70,9 @@ function App() {
         />
       </div>
       {/* hero section */}
-      <div className="w-full md:py-28 min-h-screen flex items-center lg:bg-[url('hero.jpg')] bg-no-repeat lg:py-12  bg-cover md:bg-right">
+      <div className="w-full relative overflow-hidden  z-10 md:py-28 min-h-screen flex items-center lg:bg-[url('hero.jpg')] bg-no-repeat lg:py-12  bg-cover md:bg-right">
         {/* hero content */}
+        <img src="hero.jpg" alt=""  className='absolute inset-0 -z-10 hidden md:block'/>
         <div className="md:mx-16 lg:pl-8 pt- w-[90%] lg:w-[40%] mx-auto">
           <img
             src="/meet.png"
@@ -110,13 +111,14 @@ function App() {
       <hr />
       <Services />
       <hr />
-      <div className="pb-16 pt-8">
+      <div className="pb-16 pt-8 z-0">
       <h1 className="text-center text-2xl my-8  border-2 border-slate-700 w-[250px] py-2 text-white bg-slate-700 mx-auto rounded-md">
         Testinomials
       </h1>
         <Slides />
       </div>
       {/* contactform */}
+      <hr />
       <Contact/>
       <Footer searchBox={searchBox} setSearchBox={setSearchBox} />
     </div>

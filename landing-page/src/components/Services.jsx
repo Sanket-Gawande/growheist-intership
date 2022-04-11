@@ -5,35 +5,35 @@ import { BiServer } from 'react-icons/bi'
 const Services = () => {
   const services = [
     {
-      iocn: '<FaGlobe/>',
+      iocn: 'https://png.pngtree.com/png-vector/20190611/ourmid/pngtree-web-development-illustration-modern-can-be-used-for-landing-pages-web-png-image_1496210.jpg',
       heading: 'Web Devlopment',
     },
     {
-      iocn: 'BiServer',
+      iocn: 'https://www.pngitem.com/pimgs/m/609-6092213_illustration-hosting-hd-png-download.png',
       heading: 'Web Hosting',
     },
     {
-      iocn: 'FaDatabase',
+      iocn: 'https://www.marcobehler.com/images/guides/undraw_server_status_5pbv-042ff01d.svg',
       heading: 'Databases',
     },
     {
-      iocn: 'FaPhotoVideo',
+      iocn: 'https://pixerio.com/wp-content/uploads/2020/12/Graphic-Design-Company.png',
       heading: 'Graphics design',
     },
     {
-      iocn: 'FaPhotoVideo',
+      iocn: 'https://cdn.dribbble.com/users/1615584/screenshots/16491825/media/ffd297af6564a74a24058949a6a38792.jpg?compress=1&resize=400x300&vertical=top',
       heading: 'UI/UX design',
     },
     {
-      iocn: 'FaPhotoVideo',
+      iocn: 'https://toppng.com/uploads/preview/server-11550708871dh4sonj4jr.png',
       heading: 'Backend Managment',
     },
     {
-      iocn: 'FaPhotoVideo',
+      iocn: 'https://softprodigy.com/wp-content/uploads/2019/06/cms.png',
       heading: 'Headless CMS',
     },
     {
-      iocn: 'FaPhotoVideo',
+      iocn: 'https://p7.hiclipart.com/preview/279/196/15/video-editing-software-imovie-others.jpg',
       heading: 'VideoGraphy',
     },
   ]
@@ -52,7 +52,7 @@ const Services = () => {
               className="w-24 h-24 rounded full block mx-auto my-2 "
             /> */}
 
-              <FaGlobe className="w-24 h-24 rounded full block mx-auto my-2 text-red-500 group-hover:text-slate-100" />
+              <img src={service.iocn} className="w-24 h-24 rounded full block mx-auto my-2 text-red-500 group-hover:text-slate-100" />
               <h4 className="text-center group-hover:text-white font-extrabold  my-4 text-lg text-red-500">
                 {service.heading}
               </h4>

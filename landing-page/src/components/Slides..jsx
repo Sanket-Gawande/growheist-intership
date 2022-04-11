@@ -31,7 +31,7 @@ export default function App() {
                   {/* about */}
                   <div className="flex flex-col  my-8 justify-center md:w-[40%]">
                     <img
-                      src={user.picture.thumbnail}
+                      src={user.picture.medium}
                       className="mx-auto  w-24 h-24 rounded-full border border-red-500 block"
                       alt=""
                     />

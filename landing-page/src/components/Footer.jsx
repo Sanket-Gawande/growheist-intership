@@ -11,7 +11,7 @@ const Footer = ({ setSearchBox, searchBox }) => {
   return (
     <div className="sticky top-[100%] w-full py-1 bg-slate-700 border-t-4 border-red-500">
       <div className="flex justify-between px-4 md:px-12 border-b border-slate-400">
-        <img src="/logo-dark.png" alt="logo" className="w-16 h-16 p-2" />
+        <img src="/logo-dark.png" alt="logo" className="w-20 h-20 p-2" />
         <div className="flex justify-center text-white items-center space-x-4">
           <FaInstagram />
           <FaGoogle />
@@ -67,7 +67,7 @@ const Footer = ({ setSearchBox, searchBox }) => {
           height="200"
           allowFullScreen=""
           loading="lazy"
-          className="block mx-auto w-[350px] md:w-[400px]"
+          className="block mx-auto w-[350px] mr-10 md:w-[400px] bg-red-600"
           referrerPolicy="no-referrer-when-downgrade"
           style={{}}
         ></iframe>
