@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 const EducationSection = () => {
  
   return (
-    <fieldset className="border border-slate-300  w-[90%] mx-auto rounded-sm  my-4 ">
+    <fieldset className="border border-slate-300  w-[90%] mx-auto rounded-sm  px-4 my-4 ">
     
       {/* info section */}
       <div className="flex  flex-col md:flex-row flex-wrap justify-center">

@@ -13,7 +13,7 @@ const WorkInfo = () => {
   }
 
   return (
-    <fieldset className="border border-slate-500 rounded-sm  my-4 md:p-8 pb-0">
+    <fieldset className="border border-slate-500 rounded-sm  p-4 my-4 md:p-8 pb-0">
       <legend className="text-gray-200 py-2  text-md px-6 bg-slate-500 rounded-md mx-4">
         Work information
       </legend>

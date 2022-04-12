@@ -2,7 +2,7 @@ import React from 'react'
 
 const WorkSection = () => {
   return (
-    <fieldset className="border border-slate-500 w-[90%] mx-auto  rounded-sm  my-4 pb-0">
+    <fieldset className="border border-slate-500 w-[90%] mx-auto px-4  rounded-sm  my-4 pb-0">
      
       {/* info section */}
       <div className="flex  flex-col md:flex-row flex-wrap justify-center">
