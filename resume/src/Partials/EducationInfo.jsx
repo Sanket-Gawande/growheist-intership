@@ -8,7 +8,7 @@ const EducationInfo = () => {
     setes([ES , ...es])
   }
   return (
-    <fieldset className="border border-slate-500 rounded-md  my-4 md:p-8">
+    <fieldset className="border border-slate-500 rounded-md  my-4 p-4 md:p-8">
       <legend className="text-gray-200 py-2  text-md px-6 bg-slate-500 rounded-md mx-4">
         Education details
       </legend>

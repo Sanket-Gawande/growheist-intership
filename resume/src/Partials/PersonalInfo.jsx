@@ -2,20 +2,20 @@ import React from 'react'
 
 const PersonalInfo = () => {
   return (
-    <fieldset className="border border-slate-500 rounded-sm my-4 md:p-8">
+    <fieldset className="border border-slate-500 rounded-sm my-4 p-4  md:p-8">
       <legend className="text-gray-200 py-2  text-md px-6 bg-slate-500 rounded-md mx-4">
         Personal information
       </legend>
       {/* info section */}
       <div className="flex  flex-col md:flex-row flex-wrap justify-center">
         <span className="m-4">
-          <h4>First name</h4>
+          <h4 className=''>First name</h4>
           <input
             type="text"
             name="fname"
             required
             id=""
-            className="border outline-none py-1 px-4 rounded-md border-slate-400 my-2"
+            className="border  outline-none py-1 px-4 rounded-md border-slate-400 my-2"
           />
         </span>
         <span className="m-4">

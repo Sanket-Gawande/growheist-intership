@@ -24,7 +24,7 @@ const Form = () => {
     <>
       <form
         action="http://localhost:8001/formdata"
-        className="my-16 py-12 w-[90%] max-w-[1000px] mx-auto rounded-md"
+        className="my-16 py-12 md:w-[90%] max-w-[1000px] px-4 md:px-0 mx-auto rounded-md"
         // onSubmit={formSubmit}
         method="post"
         ref={formRef}
