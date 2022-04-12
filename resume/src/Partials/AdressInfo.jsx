@@ -6,10 +6,11 @@ const AdressInfo = () => {
   const [States, setStates] = useState([])
   const [city, setCity] = useState([])
   const [ccode, setccode] = useState(null)
-
+  
   useEffect(async () => {
     const c = Country.getAllCountries()
     setCountries(c)
+    
   }, [States])
 
   const getSatets = (code) => {
@@ -22,7 +23,7 @@ const AdressInfo = () => {
     setCity(city)
   }
   return (
-    <fieldset className="border border-slate-500 rounded-md  my-4 p-8">
+    <fieldset className="border border-slate-500 rounded-sm  my-4 md:p-8">
       <legend className="text-gray-200 py-2  text-md px-6 bg-slate-500 rounded-md mx-4">
         Address info
       </legend>
@@ -36,7 +37,7 @@ const AdressInfo = () => {
             className="w-[255px] border outline-none  py-1 px-4 rounded-md border-slate-400 my-2"
             onInput={(e) => getSatets(e.target.value)}
           >
-            <option value="null"> Select country</option>
+            <option value="null" selected> Select country</option>
             {countries.map((c) => {
               return (
                 <option key={c.isoCode} value={c.isoCode}>
