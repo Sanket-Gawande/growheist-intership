@@ -1,6 +1,6 @@
 import express from "express";
 const app = express();
-const PORT = process.env.PORT || 8001;
+const PORT = process.env.PORT || 8000;
 import bp from "body-parser"
 
 app.use(bp.json())

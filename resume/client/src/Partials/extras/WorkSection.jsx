@@ -1,65 +1,68 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
-const EducationSection = () => {
- 
+const WorkSection = () => {
   return (
-    <fieldset className="border border-slate-300  w-[90%] mx-auto rounded-sm  px-4 my-4 ">
-    
+    <fieldset className="border border-slate-500 w-[90%] mx-auto px-4  rounded-sm  my-4 pb-0">
+     
       {/* info section */}
       <div className="flex  flex-col md:flex-row flex-wrap justify-center">
         <span className="m-4">
-          <h4>School/College name</h4>
-          <input 
+          <h4>Profile</h4>
+          <input
             type="text"
-            name="institute"
+            name="Profile"
             id=""
             className="border outline-none py-1 px-4 rounded-md border-slate-400 my-2"
           />
         </span>
         <span className="m-4">
-          <h4>City</h4>
+          <h4>Organization</h4>
           <input
-            type="text"
-            name="education_city"
+            type="org"
+            name="text"
             id=""
             className="border outline-none py-1 px-4 rounded-md border-slate-400 my-2"
           />
         </span>
         <span className="m-4">
-          <h4>Field of study</h4>
+          <h4>Location</h4>
           <input
             type="text"
-            name="field"
+            name="location"
             id=""
             className="border outline-none py-1 px-4 rounded-md border-slate-400 my-2"
           />
         </span>
         <span className="m-4">
-          <h4>Degree</h4>
+          <h4>Start date</h4>
           <input
-            type="text"
-            name="pincode"
+            type="month"
+            name="start_date"
             required
-            placeholder="HSC or BTech"
             className="border  w-[255px] outline-none py-1 px-4 rounded-md border-slate-400 my-2"
           />
         </span>
-
         <span className="m-4">
-          <h4>Year of Passout</h4>
+          <h4>End date</h4>
           <input
-            name="yearofpassout"
-            type="text"
-            id=""
-            className="border outline-none py-1 px-4 rounded-md border-slate-400 my-2"
+            type="month"
+            name="end_date"
+            required
+            className="border  w-[255px] outline-none py-1 px-4 rounded-md border-slate-400 my-2"
           />
         </span>
-
-
+        <span className="m-4">
+          <h4>Other info</h4>
+          <textarea
+            name="other_work"
+            type="text"
+            id=""
+            className="border outline-none py-1 w-[255px] px-4 rounded-md border-slate-400 my-2"
+          />
+        </span>
       </div>
-      
     </fieldset>
   )
 }
 
-export default EducationSection
+export default WorkSection

@@ -53,7 +53,7 @@ const PersonalInfo = () => {
           <h4>Marietal status</h4>
           <select
             required
-            name="lname"
+            name="marietal_status"
             className="border outline-none w-[255px]  py-1 px-4 rounded-md border-slate-400 my-2"
           >
             <option value="married">Married</option>
